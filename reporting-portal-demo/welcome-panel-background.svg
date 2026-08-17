@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 900" width="792" height="900" font-family="Poppins, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <!-- Full-panel gradient: linear-gradient(144deg, #071b63 0%, #1249d2 53%, #2077ed 100%) -->
+    <linearGradient id="welcomeBg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="654" y2="900">
+      <stop offset="0%" stop-color="#071B63"/>
+      <stop offset="53%" stop-color="#1249D2"/>
+      <stop offset="100%" stop-color="#2077ED"/>
+    </linearGradient>
+
+    <!-- CSS filter: blur(2px) -->
+    <filter id="orbBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Base fallback color #122f86 + gradient overlay -->
+  <rect width="792" height="900" fill="#122F86"/>
+  <rect width="792" height="900" fill="url(#welcomeBg)"/>
+
+  <!-- ::after decorative ring: width 73% (578), height 70% (630), right -16%, top -22%, rotate(-23deg) -->
+  <ellipse cx="630" cy="117" rx="289" ry="315"
+           fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1"
+           transform="rotate(-23 630 117)"/>
+
+  <!-- Orb one: 280px, right 7% (55), top 10% (90), rgba(65,174,255,.23), blur(2px) -->
+  <circle cx="597" cy="230" r="140"
+          fill="#41AEFF" fill-opacity="0.23"
+          filter="url(#orbBlur)"/>
+
+  <!-- Orb two: 150px, left -55px, top 18% (162), rgba(255,184,45,.13), blur(2px) -->
+  <circle cx="20" cy="237" r="75"
+          fill="#FFB82D" fill-opacity="0.13"
+          filter="url(#orbBlur)"/>
+
+  <!-- Wave three (back): bottom 15%, rgba(255,255,255,.08) -->
+  <ellipse cx="419.5" cy="612" rx="546.5" ry="153"
+           fill="#FFFFFF" fill-opacity="0.08"
+           transform="rotate(-7 419.5 612)"/>
+
+  <!-- Wave two (mid): bottom 2%, rgba(8,37,132,.36) -->
+  <ellipse cx="419.5" cy="729" rx="546.5" ry="153"
+           fill="#082584" fill-opacity="0.36"
+           transform="rotate(-7 419.5 729)"/>
+
+  <!-- Wave one (front): bottom -9%, rgba(255,255,255,.16) -->
+  <ellipse cx="419.5" cy="828" rx="546.5" ry="153"
+           fill="#FFFFFF" fill-opacity="0.16"
+           transform="rotate(-7 419.5 828)"/>
+</svg>
